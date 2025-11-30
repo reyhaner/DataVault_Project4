@@ -1,0 +1,9 @@
+#Sistem Dosyaları
+.DS_Store
+Thumbs.db
+
+#Loglar ve Gecici Dosyalar
+*.log
+*.tmp
+/tmp/
+
