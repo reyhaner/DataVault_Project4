@@ -1,0 +1,26 @@
+=== SISTEM IZLEME VE DISK ANALIZI RAPORU ===
+Cum 05 Ara 2025 19:55:05 +03
+-------------------------------------------
+[1] DISK KULLANIMI (En Buyuk 5 Dosya/Klasor)
+12K	/srv/data
+4,0K	/srv/data/ik
+4,0K	/srv/data/finans
+
+[2] RAM CANAVARLARI (Bellek Kullanimina Gore)
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+reyhan      4983  0.1 14.5 5785872 585708 ?      Ssl  Ara03   3:39 java -Dkc.config.built=true -Djava.util.concurrent.ForkJoinPool.common.threadFactory=io.quarkus.bootstrap.forkjoin.QuarkusForkJoinWorkerThreadFactory -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.err.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -XX:+ExitOnOutOfMemoryError -Djava.security.egd=file:/dev/urandom -XX:+UseG1GC -XX:FlightRecorderOptions=stackdepth=512 -Djdk.tls.rejectClientInitiatedRenegotiation=true -XX:MaxRAMPercentage=70 -XX:MinRAMPercentage=70 -XX:InitialRAMPercentage=50 --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED -Duser.language=en -Duser.country=US -Dkc.home.dir=/opt/keycloak/bin/.. -Djboss.server.config.dir=/opt/keycloak/bin/../conf -Djava.util.logging.manager=org.jboss.logmanager.LogManager -Dpicocli.disable.closures=true -Dquarkus-log-max-startup-records=10000 -cp /opt/keycloak/bin/../lib/quarkus-run.jar io.quarkus.bootstrap.runner.QuarkusEntryPoint start-dev
+reyhan    297101  9.9 14.4 12101272 581348 ?     Sl   18:05  10:54 /usr/lib/firefox-esr/firefox-esr
+reyhan    297713 11.5  8.4 3025100 338384 ?      Sl   18:06  12:34 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 9 -isForBrowser -prefsLen 31501 -prefMapSize 249602 -jsInitLen 234912 -parentBuildID 20250519114620 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appDir /usr/lib/firefox-esr/browser {891d370e-653e-4dab-b648-212d33ebb498} 297101 true tab
+reyhan    115185  0.0  7.5 2187388 301340 ?      Sl   Ara04   0:52 gnome-text-editor
+reyhan    297196  0.1  3.9 2507844 157728 ?      Sl   18:05   0:07 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 1 -isForBrowser -prefsLen 28407 -prefMapSize 249602 -jsInitLen 234912 -parentBuildID 20250519114620 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appDir /usr/lib/firefox-esr/browser {d2691bda-5c2f-4a6b-a4de-7fba64def846} 297101 true tab
+
+[3] CPU CANAVARLARI (Islemciye Gore)
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root        2058 12.3  3.2 389056 129552 tty7    Ssl+ Ara03 358:50 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+reyhan    297713 11.5  8.4 3025100 338384 ?      Sl   18:06  12:34 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 9 -isForBrowser -prefsLen 31501 -prefMapSize 249602 -jsInitLen 234912 -parentBuildID 20250519114620 -greomni /usr/lib/firefox-esr/omni.ja -appomni /usr/lib/firefox-esr/browser/omni.ja -appDir /usr/lib/firefox-esr/browser {891d370e-653e-4dab-b648-212d33ebb498} 297101 true tab
+message+     602 10.2  0.1  10504  7604 ?        Ss   Ara03 297:03 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+reyhan    297101  9.9 14.4 12101272 581348 ?     Sl   18:05  10:54 /usr/lib/firefox-esr/firefox-esr
+reyhan      2470  8.7  3.0 1190436 121388 ?      Sl   Ara03 252:08 xfwm4
+
+[4] ZOMBIE PROCESS KONTROLU
+UYARI: 2 adet Zombie surec var!
