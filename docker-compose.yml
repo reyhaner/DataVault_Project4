@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  samba:
+    image: dperson/samba
+    container_name: datavault_container
+    ports:
+      - "139:139"
+      - "445:445"
+    volumes:
+      - /data/finans:/mnt/finans
+      - /data/ik:/mnt/ik
+    command: >
+      -u "ahmet;12345"
+      -u "irem;12345"
+      -s "finans;/mnt/finans;yes;no;no;ahmet"
+      -s "ik;/mnt/ik;yes;no;no;irem"
+    restart: always
